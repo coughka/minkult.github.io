@@ -1,0 +1,376 @@
+@import url("../css/normalize.css");
+@import url("../css/media.css");
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Cormorant:400,700&subset=cyrillic-ext');
+@import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
+
+/*Perfect Fifth*/
+
+body {
+  line-height: 1.45;
+  color: #333;
+}
+
+p {margin-bottom: 1.3rem;}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  font-family:"Montserrat",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-size: 5.063rem;
+  text-transform: uppercase;
+  line-height: 0.75;
+}
+
+h2 {font-size: 3.375rem;}
+
+h3 {
+    font-size: calc(0.5rem + 1vw);
+    margin:0;
+}
+
+h4 {
+    font-size: 1rem;
+    margin:0;
+}
+
+small, .font_small {
+    font-size: 0.667rem;
+    font-family: "Anonymous Pro", 'Courier New', Courier, monospace;
+}
+
+ul li {
+    list-style:none;
+    margin:0;
+}
+
+ul {
+    padding:0;
+    margin:0;
+}
+
+a {
+    text-decoration:none;
+    color:black;
+}
+
+.content {
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    align-items:center;
+}
+
+.header-content {
+    height:50vh;
+}
+
+.header-block {
+    grid-column:span 8;
+    justify-self:center;
+    align-self:stretch;
+    display:grid;
+    grid-template-rows:repeat(3,1fr);  
+}
+
+.header-title {
+    grid-row:2;
+    align-self:center;
+}
+
+.social-bar {
+    grid-row:3;
+    align-self:end;
+    padding:1rem 0;
+}
+
+.social-bar i, .info-bar i{
+    margin-right:0.5rem;
+    color:black;
+}
+
+.menu{
+    grid-column:span 4;
+    background-color:gold;
+    align-self:stretch;
+
+    display:grid;
+    align-items:center;
+    justify-items:center;   
+}
+
+section {
+    margin-top:5vh;
+}
+
+/*Authors*/
+
+.picture::after {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: -100px;
+    top: 150px;
+    background: #e93d34;
+}
+
+.authors-content {
+    width:80%;
+    margin:0 auto;
+    
+}
+
+figcaption {
+    position:relative;
+    bottom:55%;
+    left:75%;
+}
+
+.authors-block figure {
+    filter:grayscale(50%);
+}
+
+.authors-block {
+    
+}
+
+.authors-block:first-child {
+    grid-column:span 12;
+}
+
+.authors-block:nth-child(2) {
+    grid-column: span 4;
+}
+
+.authors-block:nth-child(3) {
+    grid-column: 7/span 6;
+}
+
+.authors-block:nth-child(3) .authors-info, .authors-block:nth-child(6) .authors-info {
+    left:-15%;
+}
+
+.authors-block:nth-child(4) {
+    grid-column:5/span 4;
+}
+
+.authors-block:nth-child(5) {
+    grid-column:9/span 4;
+    grid-row:span 2;
+}
+
+.authors-block:nth-child(6) {
+    grid-column:3/span 6;
+}
+
+.authors-block:nth-child(7) {
+    grid-column:span 4;
+}
+
+.authors-block:nth-child(8) {
+    grid-column: 7/span 6;
+}
+
+.authors-info {
+    position:relative;
+    left:50%;
+    top:4rem;
+    z-index:9999;
+    padding:0.5rem 1rem;
+    background-color:rgba(0,0,0,0.05);
+}
+
+#more {display: none;}
+
+#readMoreBtn {
+    grid-column:span 12;
+}
+
+
+
+/*Editors Team*/
+
+img, picture {
+    width:100%;
+}
+
+picture {
+    filter: grayscale(100%);
+}
+
+.team-content {
+    width:82%;
+    margin:0 auto;
+    grid-gap:1rem;
+}
+
+.team-block:first-child {
+    grid-column:span 4;
+}
+
+.team-block {
+    grid-column:span 2;
+}
+
+.info-bar {
+    text-align:right;
+}
+
+/*Footer*/
+
+footer {
+    font-family: "Anonymous Pro", 'Courier New', Courier, monospace;
+    color:rgba(0,0,0,0.75);
+    background-color:rgba(0,0,0,0.1);
+    padding:1rem 0;
+    margin-top:5vh;
+}
+
+footer p {
+    font-family: "Anonymous Pro", 'Courier New', Courier, monospace;
+}
+
+.footer-content {
+    width:70%;
+    margin:0 auto;
+    align-items:start;
+    grid-gap:1rem;
+}
+
+footer h3 {
+    font-weight:700;
+    text-align:left;
+    font-family: "Montserrat",sans-serif;
+    writing-mode: vertical-lr;
+    grid-column:1;
+}
+
+.footer-block {
+    grid-column:span 4;
+}
+
+.footer-block:nth-child(3) {
+    grid-column:span 6;
+    line-height:1;
+}
+
+.social-bar {
+    justify-self:end;
+    margin-top:1rem;
+}
+
+.footer-block a{    
+    color:rgba(0,0,0,0.75);
+    padding:0;
+}
+
+.menu-footer a:hover {
+    border-bottom:5px solid rgba(255,99,71,0.75);
+}
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: gold;
+    color: black;
+    padding: 1rem;
+    font-size: 1rem;
+    border:2.5px solid black;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: goldenrod;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right:2.25rem;
+    top:-1rem;
+    padding:1rem;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    background-color: tomato;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: "Anonymous Pro", 'Courier New', Courier, monospace;
+    margin-right:0.5rem;
+}
+
+.dropdown-content a:hover {
+    background-color:rgba(255,99,71,0.75);
+}
+
+.show {
+    display:flex;
+    transition:1s;
+}
+
+/*scroll to top*/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 2rem;
+    z-index: 99;
+    font-size: 1rem;
+    border: 2px solid rgba(255,99,71,0.95);
+    border-radius:50%;
+    color: tomato;
+    background-color: rgba(255,255,255,0.75);
+    cursor: pointer;
+    padding: 1rem;
+  }
+  
+  #myBtn:hover {
+    background-color: rgba(255,99,71,0.75);
+    color: rgba(255,255,255,0.05);
+  }
+
+  /* accordion */
+
+  .how-help-content {
+      width: 65%;
+      margin:0 auto;
+  }
+
+  .accordion {
+    grid-column:span 12;
+    background-color: rgba(255,99,71,0.75);
+    color: rgba(255,255,255,0.75);
+    cursor: pointer;
+    padding: 1rem;
+    margin:1rem 0;
+    border-radius:1rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: rgba(255,99,71,0.95);
+}
+
+.panel {
+    grid-column:span 12;
+    padding: 0 1rem;
+    background-color: rgba(255,255,255,0.75);
+    display: none;
+    overflow: hidden;
+}

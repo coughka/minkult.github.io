@@ -1,0 +1,30 @@
+@media screen and (max-width: 1024px) {
+    h2 {
+        grid-row:span 2;
+        margin-bottom:1rem;
+    }
+
+    .bio {
+        align-self:end;
+    }
+
+    .read-content {
+        width:75%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .read-content {
+        width:95%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-content {
+        width:95%;
+    }
+
+    .footer-block {
+        grid-column:span 5;
+    }
+}
