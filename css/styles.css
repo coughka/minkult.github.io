@@ -108,19 +108,9 @@ section {
 
 /*Authors*/
 
-.picture::after {
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    right: -100px;
-    top: 150px;
-    background: #e93d34;
-}
-
 .authors-content {
     width:80%;
-    margin:0 auto;
-    
+    margin:0 auto;    
 }
 
 figcaption {
@@ -131,10 +121,6 @@ figcaption {
 
 .authors-block figure {
     filter:grayscale(50%);
-}
-
-.authors-block {
-    
 }
 
 .authors-block:first-child {
@@ -216,7 +202,7 @@ picture {
 }
 
 .info-bar {
-    text-align:right;
+    text-align:left;
 }
 
 /*Footer*/
