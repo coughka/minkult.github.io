@@ -108,71 +108,75 @@ section {
 
 /*Authors*/
 
-.authors-content {
-    width:80%;
-    margin:0 auto;    
-}
-
-figcaption {
+.authors-block {
+    min-height:10vh;
+    grid-column:span 4;
     position:relative;
-    bottom:55%;
-    left:75%;
-}
-
-.authors-block figure {
     filter:grayscale(50%);
 }
 
 .authors-block:first-child {
-    grid-column:span 12;
+    grid-column:span 6;
 }
 
 .authors-block:nth-child(2) {
-    grid-column: span 4;
+    grid-row: 3/span 2;
 }
 
 .authors-block:nth-child(3) {
-    grid-column: 7/span 6;
-}
-
-.authors-block:nth-child(3) .authors-info, .authors-block:nth-child(6) .authors-info {
-    left:-15%;
+    grid-row:2/span 2;
+    grid-column:7/span 6;
 }
 
 .authors-block:nth-child(4) {
+    grid-row: 4/span 2;
     grid-column:5/span 4;
 }
 
 .authors-block:nth-child(5) {
+    grid-row: 5/span 2;
     grid-column:9/span 4;
-    grid-row:span 2;
 }
 
 .authors-block:nth-child(6) {
+    grid-row: 6/span 2;
     grid-column:3/span 6;
 }
 
-.authors-block:nth-child(7) {
-    grid-column:span 4;
+.authors-content {
+    width:75%;
+    margin:0 auto;
+    grid-gap:2rem;
+    grid-template-rows: auto;
 }
 
-.authors-block:nth-child(8) {
-    grid-column: 7/span 6;
+figure {
+    margin:0;
 }
 
-.authors-info {
-    position:relative;
-    left:50%;
-    top:4rem;
-    z-index:9999;
-    padding:0.5rem 1rem;
-    background-color:rgba(0,0,0,0.05);
+.authors-content hgroup {
+    position:absolute;
+    top:1rem;
+    right:-4rem;
 }
 
-#more {display: none;}
+.authors-block:nth-child(6)  hgroup {
+    left:-4rem;
+}
 
-#readMoreBtn {
+.btn {
+    border:none;
+    font-size:1.414rem;
+    background-color:hsl(0, 0%, 100%);
+    cursor:pointer;
+    margin:1rem 0;
+    padding:0.25rem 0;
+    border-bottom:2.5px solid black;
+}
+
+.btn-blog {
     grid-column:span 12;
+    justify-self:center;
 }
 
 
@@ -220,7 +224,7 @@ footer p {
 }
 
 .footer-content {
-    width:70%;
+    width:80%;
     margin:0 auto;
     align-items:start;
     grid-gap:1rem;
@@ -235,11 +239,11 @@ footer h3 {
 }
 
 .footer-block {
-    grid-column:span 4;
+    grid-column:span 3;
 }
 
 .footer-block:nth-child(3) {
-    grid-column:span 6;
+    grid-column:span 7;
     line-height:1;
 }
 
