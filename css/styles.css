@@ -145,6 +145,26 @@ section {
     grid-column:3/span 6;
 }
 
+.authors-block:nth-child(9) {
+    grid-row: 7/span 2;
+    grid-column:span 3;
+}
+
+.authors-block:nth-child(10) {
+    grid-row: 8/span 2;
+    grid-column:3/span 3;
+}
+
+.authors-block:nth-child(11) {
+    grid-row: 9/span 2;
+    grid-column:span 3;
+}
+
+.authors-block:nth-child(12) {
+    grid-row: 10/span 2;
+    grid-column:span 3;
+}
+
 .authors-content {
     width:75%;
     margin:0 auto;
@@ -166,7 +186,32 @@ figure {
     left:-4rem;
 }
 
-.btn {
+/*READ MORE*/
+
+.read-more-state {
+    grid-column:span 12;
+    opacity:0;
+    justify-self:center;
+  }
+
+.read-more-target {
+    display:none;
+    animation: bounce 0.25s;
+  }
+
+  .read-more-state:checked ~ .read-more-target {
+    display:block;
+  }
+
+  .read-more-state ~ .read-more-trigger:before {
+    content: 'Яшчэ';
+  }
+  
+  .read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Схавай';
+  }
+
+  .read-more-trigger {
     border:none;
     font-size:1.414rem;
     background-color:hsl(0, 0%, 100%);
@@ -174,12 +219,10 @@ figure {
     margin:1rem 0;
     padding:0.25rem 0;
     border-bottom:2.5px solid black;
-}
-
-.btn-blog {
-    grid-column:span 12;
     justify-self:center;
-}
+    grid-column:span 12;
+  }
+
 
 
 
@@ -388,6 +431,7 @@ footer h3 {
 
     .authors-content hgroup, .authors-block:nth-child(6) hgroup {
         left:1rem;
+        right:0;
     }
 }
 
