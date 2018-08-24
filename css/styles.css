@@ -1,5 +1,5 @@
 @import url("../css/normalize.css");
-
+@import url("../css/animate.css");
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic-ext');
 @import url('https://fonts.googleapis.com/css?family=Cormorant:400,700&subset=cyrillic-ext');
@@ -119,6 +119,12 @@ section {
     filter:grayscale(75%);
 }
 
+figure:hover {
+    animation-name: tada;
+    animation-delay:0.5s;
+    animation-duration:0.5s;
+}
+
 .authors-block:first-child {
     grid-column:span 6;
 }
@@ -213,9 +219,10 @@ figcaption {
 }
 
 .authors-content hgroup {
+    writing-mode: vertical-lr;
     position:absolute;
-    top:1rem;
-    right:-4rem;
+    top:0;
+    right:-2rem;
 }
 
 .authors-block:nth-child(6)  hgroup {
@@ -414,8 +421,9 @@ footer h3 {
     }
 
     .authors-content hgroup, .authors-block:nth-child(6) hgroup {
-        left:1rem;
+        left:0;
         right:0;
+        writing-mode: horizontal-tb;
     }
 }
 
