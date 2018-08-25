@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700&subset=latin-ext');
 
-
 .read-content {
     width:75%;
 }
@@ -24,7 +23,7 @@
     grid-column:2;
 }
 
-h2 {
+.intro h2 {
     writing-mode: vertical-rl;
     margin:0 1rem;
     font-family:"Montserrat", sans-serif;

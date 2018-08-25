@@ -1,10 +1,14 @@
 @import url("../css/normalize.css");
 @import url("../css/animate.css");
+@import url("../css/styles-authors.css");
+@import url("../css/media.css");
+
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic-ext');
 @import url('https://fonts.googleapis.com/css?family=Cormorant:400,700&subset=cyrillic-ext');
 @import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
-@import url("../css/media.css");
+
+
 
 /*Perfect Fifth*/
 
@@ -91,9 +95,20 @@ a {
     padding:1rem 0;
 }
 
-.social-bar i, .info-bar i{
+.info-bar i{
     margin-right:0.5rem;
     color:black;
+}
+
+.social-bar i {
+    font-size:2rem;
+    position:relative;
+    bottom:0.2rem;
+    
+}
+
+.social-bar svg {
+    height:2rem;
 }
 
 .menu{
@@ -154,52 +169,52 @@ figure:hover {
 }
 
 .authors-block:nth-child(9) {
-    grid-row: 17/span 2;
+    grid-row: 16/span 2;
     grid-column:8/span 4;
 }
 
 .authors-block:nth-child(10) {
-    grid-row: 9/span 2;
+    grid-row: 8/span 2;
     grid-column:7/span 6;
 }
 
 .authors-block:nth-child(11) {
-    grid-row: 12/span 2;
+    grid-row: 11/span 2;
     grid-column:9/span 4;
 }
 
 .authors-block:nth-child(12) {
-    grid-row: 10/span 2;
+    grid-row: 9/span 2;
     grid-column:span 3;
 }
 
 .authors-block:nth-child(13) {
-    grid-row: 18/span 2;
+    grid-row: 17/span 2;
     grid-column:span 6;
 }
 
 .authors-block:nth-child(14) {
-    grid-row: 11/span 2;
+    grid-row: 10/span 2;
     grid-column:span 4;
 }
 
 .authors-block:nth-child(15) {
-    grid-row: 13/span 2;
+    grid-row: 12/span 2;
     grid-column:2/span 6;
 }
 
 .authors-block:nth-child(16) {
-    grid-row: 19/span 2;
+    grid-row: 18/span 2;
     grid-column:span 3;
 }
 
 .authors-block:nth-child(17) {
-    grid-row: 15/span 2;
+    grid-row: 14/span 2;
     grid-column:7/span 6;
 }
 
 .authors-block:nth-child(18) {
-    grid-row: 15/span 2;
+    grid-row: 14/span 2;
     grid-column:span 4;
 }
 
@@ -241,7 +256,7 @@ figcaption {
 
 .read-more-state {
     grid-column:span 12;
-    opacity:0;
+    display:none;
     justify-self:center;
   }
 
@@ -339,7 +354,7 @@ footer h3 {
 }
 
 .footer-block:nth-child(3) {
-    grid-column:span 7;
+    grid-column:span 8;
     line-height:1;
 }
 
@@ -357,7 +372,18 @@ footer h3 {
     border-bottom:5px solid rgba(255,99,71,0.75);
 }
 
+.form-content {
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+}
 
+input {
+    padding:0.5rem 1rem;    
+}
+
+input[type="email"] {
+    width:100%;
+}
 
 /* Dropdown Button */
 .dropbtn {
@@ -403,68 +429,4 @@ footer h3 {
 .show {
     display:flex;
     transition:1s;
-}
-
-
-
-@media screen and (max-width: 1024px) {
-    .authors-block:nth-child(2),  
-    .authors-block:nth-child(3), .authors-block:nth-child(4),
-    .authors-block:nth-child(5), .authors-block:nth-child(6),
-    .authors-block:nth-child(7),  
-    .authors-block:nth-child(8), .authors-block:nth-child(9),
-    .authors-block:nth-child(10), .authors-block:nth-child(11),
-    .authors-block:nth-child(12), .authors-block:nth-child(13),
-    .authors-block:nth-child(14), .authors-block:nth-child(15),
-    .authors-block:nth-child(16), .authors-block:nth-child(17),
-    .authors-block:nth-child(18) {
-        grid-column:span 6;
-        grid-row:auto;
-    }
-
-    .authors-block:first-child {
-        grid-column:span 12;
-    }
-}
-
-
-
-@media screen and (max-width: 600px) {
-    .authors-block:first-child, .authors-block:nth-child(2),  
-    .authors-block:nth-child(3), .authors-block:nth-child(4),
-    .authors-block:nth-child(5), .authors-block:nth-child(6),
-    .authors-block:nth-child(7),  
-    .authors-block:nth-child(8), .authors-block:nth-child(9),
-    .authors-block:nth-child(10), .authors-block:nth-child(11),
-    .authors-block:nth-child(12), .authors-block:nth-child(13),
-    .authors-block:nth-child(14), .authors-block:nth-child(15),
-    .authors-block:nth-child(16), .authors-block:nth-child(17),
-    .authors-block:nth-child(18),
-    .team-block, .team-block:first-child, .menu, .header-block {
-        grid-column:span 12;
-        grid-row:auto;
-    }
-
-    .header-content {
-        grid-template-rows: 1fr 6fr;
-    }
-
-    .menu {
-        grid-row:1;
-        justify-items:end;
-        padding-right:1rem;
-    }
-
-    .authors-content hgroup, .authors-block:nth-child(6) hgroup {
-        top:-1rem;
-        left:0;
-        right:0;
-        writing-mode: horizontal-tb;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .authors-content, .team-content, .footer-content {
-        width:95%;
-    }
 }
