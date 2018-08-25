@@ -226,8 +226,16 @@ figcaption {
 }
 
 .authors-block:nth-child(6)  hgroup {
-    left:-4rem;
+    left:-2rem;
 }
+
+.authors-block:nth-child(4)  hgroup, .authors-block:nth-child(14)  hgroup {
+    top:-1.5rem;
+    right:0;
+    writing-mode: horizontal-tb;
+
+}
+
 
 /*READ MORE*/
 
@@ -398,6 +406,26 @@ footer h3 {
 }
 
 
+
+@media screen and (max-width: 1024px) {
+    .authors-block:nth-child(2),  
+    .authors-block:nth-child(3), .authors-block:nth-child(4),
+    .authors-block:nth-child(5), .authors-block:nth-child(6),
+    .authors-block:nth-child(7),  
+    .authors-block:nth-child(8), .authors-block:nth-child(9),
+    .authors-block:nth-child(10), .authors-block:nth-child(11),
+    .authors-block:nth-child(12), .authors-block:nth-child(13),
+    .authors-block:nth-child(14), .authors-block:nth-child(15),
+    .authors-block:nth-child(16), .authors-block:nth-child(17),
+    .authors-block:nth-child(18) {
+        grid-column:span 6;
+        grid-row:auto;
+    }
+
+    .authors-block:first-child {
+        grid-column:span 12;
+    }
+}
 
 
 

@@ -58,6 +58,12 @@ h2 {
     grid-column:span 12;
 }
 
+.ya-share2 {
+    grid-column:span 2;
+    justify-self:center;
+    margin-top:1rem;
+}
+
   /* accordion */
 
 .how-help-content {
