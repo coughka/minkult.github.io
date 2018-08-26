@@ -8,7 +8,9 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant:400,700&subset=cyrillic-ext');
 @import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
 
-
+header {
+    z-index:6;
+}
 
 /*Perfect Fifth*/
 
@@ -76,6 +78,15 @@ a {
     height:100vh;
 }
 
+.header-title {
+    border: 5px solid rgba(0,0,0,0.75);
+    padding:1rem 0.5rem 0.5rem 0.5rem;
+}
+
+.support-header {
+    background-color:gold;
+}
+
 .header-block {
     grid-column:span 8;
     justify-self:center;
@@ -112,13 +123,27 @@ a {
 }
 
 .menu{
+
+    align-self:stretch;
+    display:grid;
+    align-items:center;  
+}
+
+.menu-index {
     grid-column:span 4;
     background-color:gold;
-    align-self:stretch;
+    justify-items:center; 
+}
 
-    display:grid;
-    align-items:center;
-    justify-items:center;   
+.menu-support {
+    grid-template-columns: 3fr 1fr;
+    width:75%;
+    margin:0 auto;
+    justify-items:end;
+}
+
+.menu-support h2 {
+    justify-self: start;
 }
 
 section {
@@ -350,12 +375,13 @@ footer h3 {
 }
 
 .footer-block {
-    grid-column:span 3;
+    grid-column:span 4;
 }
 
-.footer-block:nth-child(3) {
+.footer-block:nth-child(2) {
     grid-column:span 8;
     line-height:1;
+    justify-self:end;
 }
 
 .social-bar {
@@ -383,6 +409,14 @@ input {
 
 input[type="email"] {
     width:100%;
+}
+
+input[type="submit"] {
+    background-color:tomato;
+    border:none;
+    color:rgba(255,255,255,0.75);
+    font-size:1.414rem;
+    font-weight:900;
 }
 
 /* Dropdown Button */

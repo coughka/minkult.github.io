@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700&subset=latin-ext');
 
+.menu-authors {
+    justify-items:end;
+    width:75%;
+    margin:0 auto;
+}
+
+.menu-authors .dropdown {
+    margin:1rem;
+    z-index:9999;
+}
+
 .read-content {
     width:75%;
 }
@@ -13,7 +24,9 @@
     grid-template-columns:1fr 4fr;
 }
 
+
 .intro img {
+    width:75%;
 
 }
 
@@ -25,8 +38,9 @@
 
 .intro h2 {
     writing-mode: vertical-rl;
-    margin:0 1rem;
+    margin:0 0 1rem 0;
     font-family:"Montserrat", sans-serif;
+    grid-row:span 2;
 }
 
 .text h3 {
@@ -37,6 +51,11 @@
     margin:1rem 1rem 0 0;
     background-color:rgba(255,99,71,0.75);
     border-radius:1rem;    
+}
+
+.help h3 {
+    writing-mode: horizontal-tb;
+    float:none;
 }
 
 .text p {
