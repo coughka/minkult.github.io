@@ -45,12 +45,11 @@
 
 .text h3 {
     text-align:left;
-    float:left;
-    writing-mode: vertical-lr;
     padding:1rem;
     margin:1rem 1rem 0 0;
     background-color:rgba(255,99,71,0.75);
-    border-radius:1rem;    
+    border-radius:1rem;
+    display:inline-block;    
 }
 
 .help h3 {
