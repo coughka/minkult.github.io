@@ -35,11 +35,12 @@
 }
 
 @media screen and (max-width: 768px) {
-    .authors-content, .team-content, .footer-content, .read-content, .how-help-content, .menu-authors {
+    .authors-content, .team-content, .footer-content, .read-content,
+     .how-help-content, .menu-authors, .support-content, .menu-support {
         width:95%;
     }
 
-    .team-block:first-child {
+    .team-block:first-child, .support-block, .support-block-sublock {
         grid-column:span 12;
     }
 
@@ -70,7 +71,6 @@
     .menu {
         grid-row:1;
         justify-items:end;
-        padding-right:1rem;
     }
 
     .footer-block {
