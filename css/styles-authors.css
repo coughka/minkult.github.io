@@ -85,6 +85,10 @@
     margin-top:1rem;
 }
 
+.panel .support-content {
+    width:95%;
+}
+
   /* accordion */
 
 .how-help-content {
