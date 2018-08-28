@@ -1,6 +1,7 @@
 @import url("../css/normalize.css");
 @import url("../css/animate.css");
 @import url("../css/styles-authors.css");
+@import url("../css/shapes.css");
 @import url("../css/media.css");
 
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700&subset=cyrillic');
@@ -26,6 +27,7 @@ p {
 h1, h2, h3, h4 {
   line-height: 1.2;
   font-family:"Montserrat",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select:none;
 }
 
 h1 {
@@ -152,11 +154,15 @@ section {
 
 /*Authors*/
 
+.authors {
+    position:relative;
+}
+
 .authors-block {
     min-height:10vh;
     grid-column:span 4;
     position:relative;
-    filter:grayscale(75%);
+    filter:grayscale(75%) sepia(25%);
 }
 
 figure:hover {
@@ -166,7 +172,8 @@ figure:hover {
 }
 
 .authors-block:first-child {
-    grid-column:span 6;
+    grid-column:span 12;
+    text-align:center;
 }
 
 .authors-block:nth-child(2) {
@@ -220,7 +227,7 @@ figure:hover {
 
 .authors-block:nth-child(14) {
     grid-row: 10/span 2;
-    grid-column:span 4;
+    grid-column:5/span 4;
 }
 
 .authors-block:nth-child(15) {
@@ -230,7 +237,7 @@ figure:hover {
 
 .authors-block:nth-child(16) {
     grid-row: 18/span 2;
-    grid-column:span 3;
+    grid-column:8/span 3;
 }
 
 .authors-block:nth-child(17) {
@@ -269,11 +276,10 @@ figcaption {
     left:-2rem;
 }
 
-.authors-block:nth-child(4)  hgroup, .authors-block:nth-child(14)  hgroup {
-    top:-1.5rem;
+.authors-block:nth-child(4)  hgroup, .authors-block:nth-child(14)  hgroup, .authors-block:nth-child(18) hgroup {
+    top:-2rem;
     right:0;
     writing-mode: horizontal-tb;
-
 }
 
 
@@ -418,6 +424,76 @@ input[type="submit"] {
     font-size:1.414rem;
     font-weight:900;
 }
+
+.support-content {
+    width:75%;
+    grid-gap:1rem;
+    align-items:start;
+    text-align:center;  
+}
+
+.support-block {
+    grid-column:span 6;
+    grid-gap:1rem;
+    padding:1rem 2rem;
+    border-radius:5px;
+    background-color:rgba(0,0,0,0.05);
+    min-height:30vh;
+}
+
+.support-block:first-child {
+    grid-column:span 12;
+    height:auto;
+}
+
+.support-block:nth-child(2) {
+    background-color:rgba(255,99,71,0.75);
+}
+
+.support-block:nth-child(4) {
+    background-color:rgba(255, 215, 0, 1);
+}
+
+.support-block:nth-child(2) p {
+    background-color:rgba(255,255,255,0.75);
+    padding:0.5rem 1rem;
+}
+
+.support-block i {
+    font-size:4rem;
+    position:relative;
+    margin:1rem 0;
+}
+
+.support-block i:hover, .support-block svg:hover  {
+    animation:swing 1s;
+    animation-delay:0.5s;
+}
+
+
+
+.support-block-sublock {
+    grid-column:span 6;
+    background-color:rgba(255,99,71,0.75);
+    padding:0.5rem 1rem;
+    min-height:10rem;
+    cursor:pointer;
+    border-radius:5px;
+    text-align:center;
+    box-shadow:5px 5px 5px rgba(255,99,71,0.25)
+}
+
+.support-block-sublock:last-child, .support-block hgroup {
+    grid-column:span 12;
+    text-align:center;
+}
+
+.support-block svg {
+    margin:1rem 0;
+}
+
+
+
 
 /* Dropdown Button */
 .dropbtn {

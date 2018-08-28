@@ -57,6 +57,10 @@
     float:none;
 }
 
+.text h4 {
+    margin-top:1rem;
+}
+
 .text p {
     margin-bottom: 1.2rem;
     font-family:'Lora', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

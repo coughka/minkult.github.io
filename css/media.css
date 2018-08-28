@@ -21,18 +21,22 @@
         grid-row:span 2;
         margin-bottom:1rem;
     }
+
+    .authors-content hgroup, .authors-block:nth-child(6) hgroup, .authors-block:nth-child(18) hgroup {
+        top:-2rem;
+        left:0;
+        right:0;
+        writing-mode: horizontal-tb;
+    }
+
+    .authors-content {
+        width:80%;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .authors-content, .team-content, .footer-content, .read-content, .how-help-content, .menu-authors {
         width:95%;
-    }
-
-    .authors-content hgroup, .authors-block:nth-child(6) hgroup {
-        top:-1rem;
-        left:0;
-        right:0;
-        writing-mode: horizontal-tb;
     }
 
     .team-block:first-child {
@@ -69,13 +73,6 @@
         padding-right:1rem;
     }
 
-    .authors-content hgroup, .authors-block:nth-child(6) hgroup {
-        top:-1rem;
-        left:0;
-        right:0;
-        writing-mode: horizontal-tb;
-    }
-
     .footer-block {
         grid-column:span 6;
     }
@@ -102,5 +99,34 @@
     .footer-block:nth-child(2) {
         border-top:2px rgba(0,0,0,0.25) solid;
         padding:1rem 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .show {
+        flex-direction:column;
+    }
+
+    .dropdown-content a {
+        margin-bottom:0.25rem;
+    }
+
+    .dropdown-content {
+        top:3rem;
+        right:-1.5rem;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .authors-content hgroup {
+        right:-4rem;
+    }
+
+    .authors-block:nth-child(6)  hgroup {
+        left:-4rem;
+    }
+
+    .authors-block:nth-child(4)  hgroup, .authors-block:nth-child(14)  hgroup, .authors-block:nth-child(18) hgroup {
+        top:-4rem;
     }
 }
