@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic-ext');
 @import url('https://fonts.googleapis.com/css?family=Cormorant:400,700&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700&subset=latin-ext');
 @import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
 
 header {
@@ -22,6 +23,7 @@ body {
 
 p {
     margin-bottom: 1.3rem;
+    font-family:"Lora", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -144,8 +146,14 @@ a {
     justify-items:end;
 }
 
-.menu-support h2 {
+.menu-support hgroup {
     justify-self: start;
+    margin:1rem 0;
+}
+
+.menu-support h2 {
+    margin:0;
+    line-height: 0.75;
 }
 
 section {
