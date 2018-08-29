@@ -173,6 +173,15 @@ section {
     filter:grayscale(75%) sepia(25%);
 }
 
+.authors-block h2::before {
+    content:"";
+    height:5px;
+    background-color:rgba(0,0,0,0.75);
+    width:2rem;
+    z-index:9999;
+    top:1rem;
+}
+
 figure:hover {
     animation-name: tada;
     animation-delay:0.5s;
@@ -433,6 +442,8 @@ input[type="submit"] {
     font-weight:900;
 }
 
+/*SUPPORT PAGE*/
+
 .support-content {
     width:75%;
     grid-gap:1rem;
@@ -477,8 +488,6 @@ input[type="submit"] {
     animation:swing 1s;
     animation-delay:0.5s;
 }
-
-
 
 .support-block-sublock {
     grid-column:span 6;
@@ -547,4 +556,5 @@ input[type="submit"] {
 .show {
     display:flex;
     transition:1s;
+    animation:shake 1s;
 }
