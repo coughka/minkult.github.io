@@ -85,6 +85,10 @@
         grid-column:span 6;
     }
 
+    .dropdown {
+        margin:0 1rem;
+    }
+
 }
 
 @media screen and (max-width: 425px) {
@@ -118,6 +122,10 @@
     .dropdown-content {
         top:3rem;
         right:-1.5rem;
+    }
+
+    img {
+        width:97%;
     }
 }
 
