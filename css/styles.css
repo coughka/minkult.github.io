@@ -432,6 +432,7 @@ input {
 
 input[type="email"] {
     width:100%;
+    float:left;
 }
 
 input[type="submit"] {
@@ -440,6 +441,10 @@ input[type="submit"] {
     color:rgba(255,255,255,0.75);
     font-size:1.414rem;
     font-weight:900;
+}
+
+label {
+    display:none;
 }
 
 /*SUPPORT PAGE*/
