@@ -432,7 +432,7 @@ input {
 
 input[type="email"] {
     width:100%;
-    float:left;
+    grid-column:1;
 }
 
 input[type="submit"] {
@@ -441,6 +441,7 @@ input[type="submit"] {
     color:rgba(255,255,255,0.75);
     font-size:1.414rem;
     font-weight:900;
+   
 }
 
 label {
@@ -502,12 +503,15 @@ label {
     cursor:pointer;
     border-radius:5px;
     text-align:center;
-    box-shadow:5px 5px 5px rgba(255,99,71,0.25);
-    
+    border-bottom: 5px solid #BD3E31;    
 }
 
 .support-block-sublock:hover {
-    animation: bounce 1s;
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+    transition: all 0.1s;
+	-webkit-transition: all 0.1s;
 }
 
 .support-block-sublock p {
