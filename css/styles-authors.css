@@ -89,6 +89,10 @@
     width:95%;
 }
 
+.continue {
+    font-weight:700;
+}
+
   /* accordion */
 
 .how-help-content {
@@ -147,7 +151,7 @@
 
 
 .morty:before {
-   content:"";
+    content:"";
     display: block;
     position: absolute;
     top: 0;
@@ -158,4 +162,9 @@
     border-bottom: none;
     mix-blend-mode: multiply;
     z-index: 2;    
+}
+
+.stripes {
+    background: repeating-linear-gradient(0,#000,#000 50%,transparent 50%,transparent 100%);
+    background-size: 100% 12px;
 }

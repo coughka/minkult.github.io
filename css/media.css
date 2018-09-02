@@ -20,6 +20,7 @@
     .intro h2 {
         grid-row:span 2;
         margin-bottom:1rem;
+        justify-self: start;
     }
 
     .authors-content hgroup, .authors-block:nth-child(6) hgroup, .authors-block:nth-child(18) hgroup {

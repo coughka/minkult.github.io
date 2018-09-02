@@ -473,10 +473,11 @@ footer p {
 
 .footer-content {
     width:80%;
+    min-height:30vh;
     margin:0 auto;
-    -webkit-box-align:start;
-        -ms-flex-align:start;
-            align-items:start;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
     grid-gap:1rem;
 }
 
@@ -633,7 +634,17 @@ form label {
     margin:1rem 0;
 }
 
+.subfooter {
+    background-color:rgba(0,0,0,0.75);
+    min-height:5vh;
+    text-align:center;
+    display:grid;
+    align-items:center;
+}
 
+.subfooter a, .subfooter i {
+    color:rgba(255,255,255,0.75);
+}
 
 
 /* Dropdown Button */
