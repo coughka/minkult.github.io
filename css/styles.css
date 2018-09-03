@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700,900&subset=cyrillic-ext');
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic-ext');
-@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i&subset=cyrillic-ext');
 @import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
 
 header {
@@ -377,7 +377,7 @@ figcaption {
 }
 
 .authors-block:nth-child(4)  hgroup, .authors-block:nth-child(14)  hgroup, .authors-block:nth-child(18) hgroup {
-    top:-1.5rem;
+    top:-2rem;
     right:0;
     -webkit-writing-mode: horizontal-tb;
         -ms-writing-mode: lr-tb;
