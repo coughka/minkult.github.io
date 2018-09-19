@@ -64,6 +64,7 @@
     -webkit-transform:rotate(180deg);
         -ms-transform:rotate(180deg);
             transform:rotate(180deg);
+
 }
 
 .text h3 {
@@ -80,6 +81,7 @@
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
     float:none;
+    
 }
 
 .text h4 {
@@ -95,6 +97,19 @@
     min-height: 90%;
     display: block;
     word-wrap: break-word;
+}
+
+.text p:first-of-type::first-letter {
+    font-size: 4.375rem;
+    margin: -0.01852em 0.14815em 0em 0em;
+    line-height: 0.72222;
+    padding: 0.16667em 0.14815em 0em 0.14815em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    color: #1c1915;
+    font-weight: 700;
+    text-shadow: 3px 0 0px hsla(9, 100%, 64%, 0.75);
 }
 
 .support footer p {
