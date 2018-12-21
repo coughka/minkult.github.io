@@ -153,6 +153,10 @@ p {
   .social-bar svg {
       height:2rem;
   }
+
+  .social-bar .fa-tablet-alt {
+      margin:0 1rem;
+  }
   
   .menu{
   
@@ -260,6 +264,15 @@ p {
 
 .btn-floating img {
     width:50%;
+}
+
+.download {
+    text-align:center;
+}
+
+.collapsible-body .btn {
+    background:hsl(9, 100%, 64%);
+    color:hsl(0, 0%, 5%);
 }
 
 .support-block-sublock img {
