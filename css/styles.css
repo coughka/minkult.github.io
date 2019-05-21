@@ -24,7 +24,7 @@ p {
   
   h1, h2, h3, h4, .read-more-trigger {
     line-height: 1.2;
-    font-family:"Montserrat Alternates", "Montserrat",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:"Montserrat Alternates", "Montserrat",'Segoe UI', Tahoma, Geneva, Calibri, Verdana, sans-serif;
     font-weight: 700;
     -webkit-user-select:none;
        -moz-user-select:none;
