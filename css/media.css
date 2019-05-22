@@ -77,7 +77,15 @@
     .authors-block:nth-child(10), .authors-block:nth-child(11),
     .authors-block:nth-child(12), .authors-block:nth-child(13),
     .authors-block:nth-child(14), .authors-block:nth-child(15),
-    .authors-block:nth-child(16), .header-block, .menu-index {
+    .authors-block:nth-child(16), .authors-block:nth-child(17),  
+    .authors-block:nth-child(18), .authors-block:nth-child(19),
+    .authors-block:nth-child(20), .authors-block:nth-child(21),
+    .authors-block:nth-child(22),  
+    .authors-block:nth-child(23), .authors-block:nth-child(31),
+    .authors-block:nth-child(24), .authors-block:nth-child(30),
+    .authors-block:nth-child(25), .authors-block:nth-child(29),
+    .authors-block:nth-child(26), .authors-block:nth-child(28),
+    .authors-block:nth-child(27), .header-block, .menu-index {
         -ms-grid-column-span:12;
         grid-column:span 12;
         grid-row:auto;

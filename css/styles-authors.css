@@ -101,6 +101,7 @@
     min-height: 90%;
     display: block;
     word-wrap: break-word;
+    column-count:2;
 }
 
 .text p:first-of-type::first-letter {

@@ -423,7 +423,7 @@ p {
     -ms-grid-row-span: 2;
     grid-row: 31/span 2;
     -ms-grid-column-span:6;
-    grid-column:4/span 6;
+    grid-column:2/span 6;
 }
 
 .authors-block:nth-child(12) {
@@ -484,7 +484,7 @@ p {
     grid-row:21/span 2;
     -ms-grid-column:7;
     -ms-grid-column-span:6;
-    grid-column:7/span 6;
+    grid-column:7/span 4;
 }
 
 .authors-block:nth-child(19) {
@@ -560,7 +560,7 @@ p {
 .authors-block:nth-child(27) {
     -ms-grid-row: 10;
     -ms-grid-row-span: 2;
-    grid-row: 31/span 2;
+    grid-row: 35/span 2;
     -ms-grid-column:5;
     -ms-grid-column-span:4;
     grid-column:5/span 4;
@@ -581,7 +581,7 @@ p {
     grid-row: 33/span 2;
     -ms-grid-column:8;
     -ms-grid-column-span:3;
-    grid-column:2/span 4;
+    grid-column:3/span 4;
 }
 
 .authors-block:nth-child(30) {
