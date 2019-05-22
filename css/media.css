@@ -13,7 +13,7 @@
         grid-row:auto;
     }
 
-    .text {
+    .text .divide-columns {
         column-count:1;
     }
 
