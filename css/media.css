@@ -13,6 +13,10 @@
         grid-row:auto;
     }
 
+    .text {
+        column-count:1;
+    }
+
     .authors-block:first-child {
         -ms-grid-column-span:12;
         grid-column:span 12;
