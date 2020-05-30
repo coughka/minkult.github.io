@@ -169,7 +169,7 @@ p {
   .menu-index {
       -ms-grid-column-span:4;
       grid-column:span 4;
-      background-color:hsl(84, 67%, 47%);
+      background-color:hsl(203, 78%, 43%);
       justify-items:center; 
   }
   
