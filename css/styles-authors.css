@@ -247,6 +247,23 @@
     mix-blend-mode: multiply;
 }
 
+.numar3:before {
+    content:"";
+    display: block;
+    position: absolute;
+    top: 0;
+    width:100vw;
+    margin-left:-1.25vw;
+    height:45vw;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    -webkit-transform:rotate(180deg);
+        -ms-transform:rotate(180deg);
+            transform:rotate(180deg);
+    background-color:hsl(203, 78%, 43%);
+    mix-blend-mode: multiply;    
+}
+
 /*
 .aku:before, .arl:before, .bah:before, .bal:before, .bra:before {
     background:-webkit-gradient(linear, right bottom, left top, from(#75d775), to(#321a5b));
