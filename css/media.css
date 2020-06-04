@@ -89,7 +89,7 @@
     .authors-block:nth-child(24), .authors-block:nth-child(30),
     .authors-block:nth-child(25), .authors-block:nth-child(29),
     .authors-block:nth-child(26), .authors-block:nth-child(28),
-    .authors-block:nth-child(27), .header-block, .menu-index {
+    .authors-block:nth-child(27), .header-block, .menu-index, .authors-block:nth-child(32), .authors-block:nth-child(33) {
         -ms-grid-column-span:12;
         grid-column:span 12;
         grid-row:auto;
